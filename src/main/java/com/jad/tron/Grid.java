@@ -16,22 +16,23 @@ public class Grid {
         }
     }
 
-    public String render() {
-        final StringBuilder builder = new StringBuilder();
-        for (int row = 0; row < this.dimension.height; row++) {
-            for (int column = 0; column < this.dimension.width; column++) {
-                builder.append(this.sprites[row][column].symbol());
-            }
-            builder.append('\n');
-        }
-        return builder.toString();
-    }
-
     public int getHeight() {
         return this.dimension.height;
     }
 
     public int getWidth() {
         return this.dimension.width;
+    }
+
+    public Dimension getDimension() {
+        return this.dimension;
+    }
+
+    public void setSpriteAt(final Sprite sprite, final Position position) {
+        this.sprites[position.getY()][position.getX()] = sprite;
+    }
+
+    public Sprite getSpriteAt(final int row, final int column) {
+        return this.sprites[row][column];
     }
 }
