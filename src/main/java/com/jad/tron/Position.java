@@ -25,9 +25,9 @@ public class Position {
     @Override
     public String toString() {
         return "Position{" +
-                "dimension=" + dimension +
-                ", x=" + getX() +
-                ", y=" + getY() +
+                "dimension=" + this.dimension +
+                ", x=" + this.getX() +
+                ", y=" + this.getY() +
                 '}';
     }
 

@@ -1,6 +1,8 @@
 package com.jad.tron;
 
-class Renderer {
+enum Renderer {
+    ;
+
     static String render(final Grid grid) {
         final StringBuilder stringBuilder = new StringBuilder();
         for (int row = 0; row < grid.getHeight(); row++) {

@@ -1,5 +1,6 @@
 package com.jad.tron;
 
+@SuppressWarnings("unused")
 public class LightCycle {
     private final Position position;
     private final Sprite sprite;
@@ -20,10 +21,6 @@ public class LightCycle {
 
     public Sprite getSprite() {
         return this.sprite;
-    }
-
-    public Direction getDirection() {
-        return this.direction;
     }
 
     public Position getPosition() {
